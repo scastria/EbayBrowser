@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{ACAAE731-3096-4016-A68E-42A5A8E820FC}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EbayBrowser.Forms.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CategoryPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CategoryCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ItemCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\PriceValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ItemDetailsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AbstractPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ZoomableWebView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ImageUrlHtmlValueConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
+  </ItemGroup>
+</Project>
